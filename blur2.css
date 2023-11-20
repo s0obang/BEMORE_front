@@ -1,4 +1,4 @@
-
+/* 배경 기본 블러*/
 img {
     filter: blur(30px);
   }

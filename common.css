@@ -9,11 +9,12 @@ body{
     display: grid;
     place-items: center;
 }
-img {
-    width: auto;
-    height: 100vh;
-    position: fixed;
-    top: 130px;
-    z-index: -1;
-  }
 
+img {
+    height: 170vh;
+    position: fixed;
+    top: -150px;
+    right: -150px;
+    width: auto;
+    z-index: -1;
+}
