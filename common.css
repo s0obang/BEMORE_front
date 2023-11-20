@@ -18,3 +18,41 @@ img {
     width: auto;
     z-index: -1;
 }
+/*인풋 밑줄*/
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-image: linear-gradient(to right, skyblue, transparent);
+    border-image-slice: 1;
+    width: 780px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 2px solid deepskyblue;
+}
+/*버튼*/
+#bt_sub {
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-bottom: 3px solid white;
+    border-image: linear-gradient(to right, rgb(28, 121, 155), transparent);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+/*글꼴은 어케할까..?*/
