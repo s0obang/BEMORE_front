@@ -18,3 +18,11 @@ img {
     width: auto;
     z-index: -1;
 }
+
+.intro h1 {
+  font-size: 1000%;
+  margin-bottom: 0;
+}
+.intro p {
+  margin-top: 0;
+}

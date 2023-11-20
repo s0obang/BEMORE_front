@@ -3,6 +3,30 @@ img {
     animation: blur 3s ease-out forwards;
     animation-delay:1s;
   }
+  .navbar {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .navbar::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #7c7c7c96;
+    position: absolute;
+    bottom: 0;
+    left: 25px; 
+    right: 25px; 
+  }
+  .nav_logo i{
+    padding: 8px 15px;
+  }
+  
   /* 블러 애니메이션 */
 @keyframes blur {
   0% {
@@ -10,5 +34,13 @@ img {
   }
   100% {
       filter: blur(30px);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
