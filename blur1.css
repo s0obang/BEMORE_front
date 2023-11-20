@@ -1,0 +1,14 @@
+img {
+    filter: blur(0);
+    animation: blur 3s ease-out forwards;
+    animation-delay:1s;
+  }
+  /* 블러 애니메이션 */
+@keyframes blur {
+  0% {
+      filter: blur(0);
+  }
+  100% {
+      filter: blur(30px);
+  }
+}
