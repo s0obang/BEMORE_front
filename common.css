@@ -18,13 +18,18 @@ img {
     width: auto;
     z-index: -1;
 }
-
+.intro{
+    position: fixed;
+    top: 100px;
+    left: 150px;
+}
 .intro h1 {
-  font-size: 1000%;
-  margin-bottom: 0;
+    font-size: 13vmin;
+    margin-bottom: 0;
 }
 .intro p {
-  margin-top: 0;
+    font-size: 1.8vmin;
+    margin-top: 0;
 }
 
 /*인풋 밑줄*/
