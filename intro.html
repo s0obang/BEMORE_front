@@ -9,18 +9,96 @@
         @media screen and (min-width:480px) and (max-width:767px){
                 /*모바일용 css*/
             }
+            body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container{
+            overflow: hidden;
+            width: 80%; /* 전체 화면의 80%를 차지하도록 설정 */
+            justify-content: center;
+            padding-top: 60px;
+        }
+        .text{
+            float:left;
+            width: 40%; 
+            line-height: 30px;
+        }
+        .images{
+            width: 50%;
+            height: 100%;
+            float: right;
+            overflow: hidden;
+
+        }
+        .col1{
+            width: 40%;
+            float: left;
+            margin-top: 90px;
+            
+        }
+        .col2{
+            width: 40%;
+            float: left;
+            margin-left: 10%;
+            
+        }
+        .pic{
+            width: 280px;
+            height: 300px;
+            float: left;
+            display: flex;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .description{
+            color: rgb(177, 174, 174);
+            font-size: 10px;
+            text-align: center;
+            margin-left: 30px;
+        }
+        h1{
+            font-size: 45px;
+        }
+
     </style>
 </head>
 <body>
-    <img src=".\images\back.png">
+    <img src=".\images\back.png" class="background">
     <nav class="navbar">
         <div class="nav_logo"><i>BEMORE</i></div>
         <ul class="nav_menu">
-            <li><a href='#'>지원하기</a></li>
-            <li><a href='#'>합격자 조회</a></li>
-            <li><a href='#'>동아리 소개</a></li>
-            <li><a href='#'>동아리 활동</a></li>
+            <li><a href='join.html'>지원하기</a></li>
+            <li><a href='inquiry.html'>합격자 조회</a></li>
+            <li><a href='intro.html'>동아리 소개</a></li>
+            <li><a href='practice_intro.html'>동아리 활동</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <div class="text">
+            <h1>동아리 소개</h1><br>
+            <p>예 저희 동아리는 비모어고여 할말이 딱히 없군요.. 저희는 대빵 민정언니의 아래에서 프론트 노예가 된 조수빈과 채서연이라고 합니다..
+                하지만 노예의 삶 그리 나쁘지 않아요 야러분도 함께 노예가 되어보시겠습니까? 저희는 열심히 취준해서 돈 많이 벌거에여
+                아 내용 채우기용으로 뭐라도 써야하는데... 님들 실리카겔을 아십니까. 여드름연고 아닙니다. 아토피 치료제?
+                아닙니다. 밴드입니다 틱택톡이 미친놈입니다 모두 들으세요 실리카겔붐은이미왔다 </p>
+        </div>
+        <div class="images">
+            <div class="col1">
+                <img class="pic" src="images/pic1.jpg"/>
+                <p class="description">예 설명란입니다</p>
+                <img class="pic" src="images/pic2.jpg"/>
+                <p class="description">예 설명란입니다</p>
+            </div>
+            <div class="col2">
+                <img class="pic" src="images/pic3.jpg"/>
+                <p class="description">예 설명란입니다</p>
+                <img class="pic" src="images/pic4.jpg"/>
+                <p class="description">예 설명란입니다</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

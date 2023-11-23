@@ -10,7 +10,7 @@ body{
     place-items: center;
 }
 
-img {
+.background {
     height: 170vh;
     position: fixed;
     top: -150px;

@@ -1,4 +1,4 @@
-img {
+.background {
     filter: blur(0);
     animation: blur 3s ease-out forwards;
     animation-delay:1s;
