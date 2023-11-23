@@ -9,18 +9,63 @@
         @media screen and (min-width:480px) and (max-width:767px){
                 /*모바일용 css*/
             }
+        .container{
+            overflow: hidden;
+            width: 80%; /* 전체 화면의 80%를 차지하도록 설정 */
+            justify-content: center;
+            padding-top: 30px;
+        }
+        .formbox{
+            float:left;
+            width: 70%; 
+            line-height: 30px;
+            margin-top: 50px;
+        }
+        .bt_box{
+            width: 20%;
+            float: right;    
+        }
+        #bt_sub{
+            margin-top:250px;
+            margin-left: 60px;
+        }
     </style>
 </head>
 <body>
-    <img src=".\images\back.png">
+    <img src=".\images\back.png" class="background">
     <nav class="navbar">
         <div class="nav_logo"><i>BEMORE</i></div>
         <ul class="nav_menu">
-            <li><a href='#'>지원하기</a></li>
-            <li><a href='#'>합격자 조회</a></li>
-            <li><a href='#'>동아리 소개</a></li>
-            <li><a href='#'>동아리 활동</a></li>
+            <li><a href='join.html'>지원하기</a></li>
+            <li><a href='inquiry.html'>합격자 조회</a></li>
+            <li><a href='intro.html'>동아리 소개</a></li>
+            <li><a href='practice_intro.html'>동아리 활동</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <form action="#">
+            <div class="formbox">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">전화번호</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="introduction">자기소개</label>
+            <textarea id="introduction" name="introduction" rows="4" required></textarea><br>
+
+            <label for="motivation">지원동기</label>
+            <textarea id="motivation" name="motivation" rows="4" required></textarea><br>
+            <label for="file">활동자료</label>
+            <input type="file" id="paper1" name="phone" required><br>
+
+            <label for="phone">깃허브/티스토리</label>
+            <input type="text" id="paper2" name="phone" required><br>
+        </div>
+        <div class="bt_box">
+                <button type="submit" id="bt_sub">SUBMIT</button>
+        </div>
+        </form>
+    </div> 
 </body>
 </html>

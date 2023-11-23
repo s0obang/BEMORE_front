@@ -1,5 +1,5 @@
 /* 배경 기본 블러*/
-img {
+.background {
     filter: blur(30px);
   }
 
