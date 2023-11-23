@@ -30,7 +30,41 @@ img {
     padding: 15px;
     font-size: 2.5vmin;
   }
-  
+  .intro .eng {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+  }
+  .intro .ko {
+    opacity: 0;
+    transform: translatey(-100%) translateX(5%);
+    transition: opacity 3s ease-in-out;
+  }
+  .intro {
+    position: fixed;
+    top: 100px;
+    left: 150px;
+  }
+  .intro .eng h1 {
+    font-size: 13vmin;
+    margin-bottom: 0;
+  }
+  .intro.eng p {
+    font-size: 1.8vmin;
+    margin-top: 0;
+  }
+  .intro .ko h1 {
+    font-size: 8vmin;
+    margin-top:50px;
+  }
+  .intro .ko h2 {
+    font-size: 3vmin;
+    margin-top:5px;
+    margin-bottom: 20px;
+  }
+  .intro .ko h3 {
+    font-size: 2.5vmin;
+    margin-bottom: 5px;
+  }
 /* 블러, 네비바 애니메이션 */
 @keyframes blur {
   0% {

@@ -19,19 +19,7 @@ img {
     z-index: -1;
 }
 /* 시작화면 문구 */
-.intro{
-    position: fixed;
-    top: 100px;
-    left: 150px;
-}
-.intro h1 {
-    font-size: 13vmin;
-    margin-bottom: 0;
-}
-.intro p {
-    font-size: 1.8vmin;
-    margin-top: 0;
-}
+
 
 /*인풋 밑줄*/
 label,
