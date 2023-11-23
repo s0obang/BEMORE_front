@@ -18,6 +18,7 @@ img {
     width: auto;
     z-index: -1;
 }
+/* 시작화면 문구 */
 .intro{
     position: fixed;
     top: 100px;

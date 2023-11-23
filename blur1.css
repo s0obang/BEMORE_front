@@ -3,6 +3,7 @@ img {
     animation: blur 3s ease-out forwards;
     animation-delay:1s;
   }
+  /* 네비바 */
   .navbar {
     width: 100%;
     color: white;
@@ -10,24 +11,27 @@ img {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 8px 12px;
+    padding: 15px 12px;
     position: relative;
+    animation: fadeIn 3s ease 1s forwards; /* 애니메이션 적용 */
+    opacity: 0;
   }
   .navbar::after {
     content: "";
     display: block;
     height: 1px;
-    background-color: #7c7c7c96;
+    background: linear-gradient(to left, hsla(189, 72%, 93%, 0.664), rgba(76, 90, 97, 0.664) 80%);
     position: absolute;
     bottom: 0;
-    left: 25px; 
-    right: 25px; 
+    left: 27px; 
+    right: 27px; 
   }
   .nav_logo i{
-    padding: 8px 15px;
+    padding: 15px;
+    font-size: 2.5vmin;
   }
   
-  /* 블러 애니메이션 */
+/* 블러, 네비바 애니메이션 */
 @keyframes blur {
   0% {
       filter: blur(0);
