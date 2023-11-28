@@ -12,7 +12,8 @@
     align-items: center;
     box-sizing: border-box;
     padding: 15px 12px;
-    position: relative;
+    position: fixed;
+    top: 0;
     animation: fadeIn 3s ease 1s forwards; /* 애니메이션 적용 */
     opacity: 0;
   }
@@ -26,45 +27,75 @@
     left: 27px; 
     right: 27px; 
   }
+  /* 메인페이지 시작 문구 */
   .nav_logo i{
     padding: 15px;
     font-size: 2.5vmin;
   }
-  .intro .eng {
+  .eng {
     opacity: 1;
     transition: opacity 3s ease-in-out;
   }
-  .intro .ko {
+  .ko {
     opacity: 0;
     transform: translatey(-100%) translateX(5%);
     transition: opacity 3s ease-in-out;
   }
-  .intro {
-    position: fixed;
+  #intro {
+    position: relative;
     top: 100px;
     left: 150px;
   }
-  .intro .eng h1 {
+  .eng h1 {
     font-size: 13vmin;
     margin-bottom: 0;
   }
-  .intro.eng p {
+  .eng p {
     font-size: 1.8vmin;
     margin-top: 0;
   }
-  .intro .ko h1 {
+  .ko h1 {
     font-size: 8vmin;
     margin-top:50px;
   }
-  .intro .ko h2 {
+  .ko h2 {
     font-size: 3vmin;
     margin-top:5px;
     margin-bottom: 20px;
   }
-  .intro .ko h3 {
+  .ko h3 {
     font-size: 2.5vmin;
     margin-bottom: 5px;
   }
+/* 화면 스크롤하면 나타나는 네비바 */
+html{
+  overflow: hidden;
+}
+section{
+  height: 100vh; /* 100% of the viewport height */
+  width: 100%;
+  position: relative;
+}
+.start_link {
+  position: absolute;
+  text-align: center;
+  width:  100%;
+  top: 20vh;
+}
+.start_link ul {
+  list-style:none;
+}
+.start_link li{
+  margin-top: 100px;
+}
+.start_link a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 3vmin;
+  color: inherit;
+  
+}
+
 /* 블러, 네비바 애니메이션 */
 @keyframes blur {
   0% {
