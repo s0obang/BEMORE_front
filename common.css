@@ -19,8 +19,16 @@ body{
     width: auto;
     z-index: -1;
 }
-/* 시작화면 문구 */
-
+#line {
+    margin-bottom: 30px;
+    margin-top:30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white; 
+    border-image: linear-gradient(to right, rgb(173, 232, 255), transparent);
+    border-image-slice: 1;
+    width: 700px;
+}
 
 /*인풋 밑줄*/
 label,
