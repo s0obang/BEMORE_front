@@ -9,12 +9,33 @@
         @media screen and (min-width:480px) and (max-width:767px){
                 /*모바일용 css*/
             }
+        .container{
+            overflow: hidden;
+            width: 80%; /* 전체 화면의 80%를 차지하도록 설정 */
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .formbox{
+            float:left;
+            width: 70%;
+            line-height: 30px;
+            margin-top: 150px;
+        }
+        label{
+            margin-top:30px;
+        }
+        .bt_box{
+            width: 20%;
+        }
+        #bt_sub{
+            margin-bottom:250px;
+        }            
     </style>
 </head>
 <body>
     <img src=".\images\back.png" class="background">
     <nav class="navbar">
-        <div class="nav_logo"><i>BEMORE</i></div>
+        <div class="nav_logo"><i><a href="start.html">BEMORE+</a></i></div>
         <ul class="nav_menu">
             <li><a href='join.html'>지원하기</a></li>
             <li><a href='inquiry.html'>합격자 조회</a></li>
@@ -22,5 +43,19 @@
             <li><a href='practice_intro.html'>동아리 활동</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <form action="#">
+            <div class="formbox">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="phone">전화번호</label>
+                <input type="tel" id="phone" name="phone" required><br>
+            </div>
+            <div class="bt_box">
+                <button type="submit" id="bt_sub">조회</button>
+            </div>
+        </form>
+    </div> 
 </body>
 </html>
