@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="blur2.css"/>
     <style>
-        @media screen and (min-width:480px) and (max-width:767px){
-                /*모바일용 css*/
-            }
         .container{
             overflow: hidden;
             width: 80%; /* 전체 화면의 80%를 차지하도록 설정 */
@@ -29,6 +26,32 @@
             margin-top:250px;
             margin-left: 60px;
         }
+        @media screen and (max-width:400px){
+                /*모바일용 css*/
+                .container{
+                width: 80%; /* 전체 화면의 80%를 차지하도록 설정 */
+                justify-content: center;
+                padding-top: 30px;
+                
+            }
+            .formbox{
+                display: inline-block;
+                width: 100%; 
+                line-height: 30px;
+                margin-top: 30px;
+            }
+            .bt_box{
+                display: inline-block;
+                width: 100%;
+                justify-content: center;   
+            }
+            #bt_sub{
+            margin-top:30px;
+            margin-bottom: 50px;
+            margin-left: 115px;
+            }
+                
+            }
     </style>
 </head>
 <body>

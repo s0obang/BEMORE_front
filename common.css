@@ -58,13 +58,11 @@ textarea:focus {
 }
 /*버튼*/
 #bt_sub {
-    background: transparent;
+    background: linear-gradient(to left, rgb(0, 4, 5), transparent);
     color: white;
     padding: 10px 20px;
     border:none;
-    border-bottom: 3px solid white;
-    border-image: linear-gradient(to right, rgb(28, 121, 155), transparent);
-    border-image-slice: 1;
+    
     border-radius: 10px;
 }
 /*글꼴은 어케할까..?*/
