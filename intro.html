@@ -4,12 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
     <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="blur2.css"/>
+    <link rel="stylesheet" href="navbar.css"/>
     <style>
         @media screen and (max-width:400px){
-                /*모바일용 css*/
-            }
-            body {
+            /*모바일용 css*/
+            .navbar{padding: 15px 8px;}
+            .nav_menu{display: none; width: 100px; padding-right: 0;}
+            .navbar::after{display: none;}
+            .nav_logo{text-align: center; width: 100%;}
+            .nav_logo i{display:block; margin:0 auto; font-size: 4vmin; padding: 0;}
+            .mNav{display: block;}
+            .nav_menu li{display: inline-block; width: 100%; text-align: center;}
+            .nav_menu li.active{background-color: rgba(255,255,255,0.3);}
+        }
+        body {
             margin: 0;
             padding: 0;
             display: flex;
@@ -63,6 +71,7 @@
         h1{
             font-size: 45px;
         }
+        
 
     </style>
 </head>
@@ -70,6 +79,11 @@
     <img src=".\images\back.png" class="background">
     <nav class="navbar">
         <div class="nav_logo"><i><a href="start.html">BEMORE+</a></i></div>
+        <div class="mNav">
+            <div class="icon_wrap">
+                <div class="icon"></div>
+            </div>
+        </div>
         <ul class="nav_menu">
             <li><a href='join.html'>지원하기</a></li>
             <li><a href='inquiry.html'>합격자 조회</a></li>
@@ -100,5 +114,17 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".mNav").click(function(){
+            $(".nav_menu").slideToggle();
+        });
+        $(window).resize(function(){
+            let wWidth = $(window).width();
+            if(wWidth>400){
+                $(".nav_menu").removeAttr("style");
+            }
+        });
+    </script>
 </body>
 </html>
