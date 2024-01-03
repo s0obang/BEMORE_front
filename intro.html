@@ -6,17 +6,6 @@
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="navbar.css"/>
     <style>
-        @media screen and (max-width:400px){
-            /*모바일용 css*/
-            .navbar{padding: 15px 8px;}
-            .nav_menu{display: none; width: 100px; padding-right: 0;}
-            .navbar::after{display: none;}
-            .nav_logo{text-align: center; width: 100%;}
-            .nav_logo i{display:block; margin:0 auto; font-size: 4vmin; padding: 0;}
-            .mNav{display: block;}
-            .nav_menu li{display: inline-block; width: 100%; text-align: center;}
-            .nav_menu li.active{background-color: rgba(255,255,255,0.3);}
-        }
         body {
             margin: 0;
             padding: 0;
@@ -68,11 +57,91 @@
             text-align: center;
             margin-left: 30px;
         }
-        h1{
+        .prac{
             font-size: 45px;
+           
         }
-        
 
+        @media screen and (max-width:400px){
+                /*모바일용 css*/
+            body {
+                display: flex;
+                margin: 0 auto;
+                padding: 0;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                
+
+            }
+            .text{
+                width: 100%; 
+                line-height: 30px;
+                margin-top: 30px;
+            }
+            .images{
+                width: 100%;
+                height: 25%;
+                overflow: scroll;
+                display: flex;
+                flex-direction: row;
+                white-space: nowrap;
+            }
+            .col1{
+                width: 80%;
+                display: flex;
+                margin: 10px;
+                float: left;
+                
+                
+            }
+            .col2{
+                width: 80%;
+                left: 30px;
+                display: flex;
+                margin: 10px;
+                float: right;
+                padding-left: 300px;
+                
+                
+            }
+            .pic{
+                width: 280px;
+                height: 300px;
+                float: left;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+            }
+            .container{
+                overflow: auto;
+                width: 80%; /* 전체 화면의 80%를 차지하도록 설정 */
+                justify-content: center;
+                padding-top: 80px;
+            }
+            .prac{
+                position: absolute;
+                left: 30px;
+                top: 70px;
+                font-size: 40px;
+                margin: 10px;
+                
+            }
+                /*모바일용 css*/
+            .description{
+                display: none;
+            }
+            
+            .navbar{padding: 15px 8px;}
+            .nav_menu{display: none; width: 100px; padding-right: 0;}
+            .navbar::after{display: none;}
+            .nav_logo{text-align: center; width: 100%;}
+            .nav_logo i{display:block; margin:0 auto; font-size: 4vmin; padding: 0;}
+            .mNav{display: block;}
+            .nav_menu li{display: inline-block; width: 100%; text-align: center;}
+            .nav_menu li.active{background-color: rgba(255,255,255,0.3);}
+
+        }
     </style>
 </head>
 <body>
@@ -92,13 +161,6 @@
         </ul>
     </nav>
     <div class="container">
-        <div class="text">
-            <h1>동아리 소개</h1><br>
-            <p>예 저희 동아리는 비모어고여 할말이 딱히 없군요.. 저희는 대빵 민정언니의 아래에서 프론트 노예가 된 조수빈과 채서연이라고 합니다..
-                하지만 노예의 삶 그리 나쁘지 않아요 야러분도 함께 노예가 되어보시겠습니까? 저희는 열심히 취준해서 돈 많이 벌거에여
-                아 내용 채우기용으로 뭐라도 써야하는데... 님들 실리카겔을 아십니까. 여드름연고 아닙니다. 아토피 치료제?
-                아닙니다. 밴드입니다 틱택톡이 미친놈입니다 모두 들으세요 실리카겔붐은이미왔다 </p>
-        </div>
         <div class="images">
             <div class="col1">
                 <img class="pic" src="images/pic1.jpg"/>
@@ -112,6 +174,14 @@
                 <img class="pic" src="images/pic4.jpg"/>
                 <p class="description">예 설명란입니다</p>
             </div>
+        </div>
+        
+        <div class="text">
+            <h1 class="prac">동아리 소개</h1><br>
+            <p>예 저희 동아리는 비모어고여 할말이 딱히 없군요.. 저희는 대빵 민정언니의 아래에서 프론트 노예가 된 조수빈과 채서연이라고 합니다..
+                하지만 노예의 삶 그리 나쁘지 않아요 야러분도 함께 노예가 되어보시겠습니까? 저희는 열심히 취준해서 돈 많이 벌거에여
+                아 내용 채우기용으로 뭐라도 써야하는데... 님들 실리카겔을 아십니까. 여드름연고 아닙니다. 아토피 치료제?
+                아닙니다. 밴드입니다 틱택톡이 미친놈입니다 모두 들으세요 실리카겔붐은이미왔다 </p>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
