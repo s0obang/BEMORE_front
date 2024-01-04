@@ -4,10 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
     <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="blur2.css"/>
+    <link rel="stylesheet" href="navbar.css"/>
     <style>
         body {
-            width: 1500px;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,7 +15,7 @@
         }
         .container{
             overflow: hidden;
-            width: 1300px; /* 전체 화면의 80%를 차지하도록 설정 */
+            width: 80%; 
             justify-content: center;
             padding-top: 60px;
         }
@@ -153,15 +152,20 @@
 </head>
 <body>
     <img src=".\images\back.png" class="background">
-    <nav class="navbar">
+    <div id="navbar">
         <div class="nav_logo"><i><a href="start.html">BEMORE+</a></i></div>
+        <div class="mNav">
+            <div class="icon_wrap">
+                <div class="icon"></div>
+            </div>
+        </div>
         <ul class="nav_menu">
-            <li><a href='join.html'>지원하기</a></li>
-            <li><a href='inquiry.html'>합격자 조회</a></li>
-            <li><a href='intro.html'>동아리 소개</a></li>
-            <li><a href='practice_intro.html'>동아리 활동</a></li>
+            <li><div><a href='join.html'>지원하기</a></div></li>
+            <li><div><a href='inquiry.html'>합격자 조회</a></div></li>
+            <li><div><a href='intro.html'>동아리 소개</a></div></li>
+            <li><div><a href='practice_intro.html'>동아리 활동</a></div></li>
         </ul>
-    </nav>
+    </div>
     <div class="container">
         <div class="images">
             <div class="col1">
@@ -208,5 +212,18 @@
                 아닙니다. 밴드입니다 틱택톡이 미친놈입니다 모두 들으세요 실리카겔붐은이미왔다 </p>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".mNav").click(function(){
+            $(".nav_menu").animate({width:"toggle"}, 400);
+        });
+        
+        $(window).resize(function(){
+            let wWidth = $(window).width();
+            if(wWidth>400){
+                $(".nav_menu").removeAttr("style");
+            }
+        });
+    </script>
 </body>
 </html>

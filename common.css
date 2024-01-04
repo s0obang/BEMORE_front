@@ -66,3 +66,16 @@ textarea:focus {
     border-radius: 10px;
 }
 /*글꼴은 어케할까..?*/
+
+@media screen and (max-width:900px){
+/* 백그라운드 이미지 */
+  .background {
+      height: 100vh; /* 화면 높이의 100%로 설정 */
+      width: 120%; /* 화면 너비의 100%로 설정 */
+      object-fit: cover; /* 이미지 비율을 유지하면서 적절하게 잘라내기 */
+      object-position: center top; /* 이미지를 가운데 상단에 위치시키기 */
+      top: 13vh;
+      left: -100px;
+      z-index: -1;
+    }
+}
