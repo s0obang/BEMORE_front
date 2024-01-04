@@ -39,6 +39,19 @@
                     padding: 10px 0;
                     text-align: center;
                 }
+                /*백그라운드 이미지*/
+                .background {
+                    height: 100vh; /* 화면 높이의 100%로 설정 */
+                    width: 120%; /* 화면 너비의 100%로 설정 */
+                    object-fit: cover; /* 이미지 비율을 유지하면서 적절하게 잘라내기 */
+                    object-position: center top; /* 이미지를 가운데 상단에 위치시키기 */
+                    position: fixed;
+                    top: 70px;
+                    left: -200px;
+                    z-index: -1;
+                }
+                
+
         }
         
     </style>
@@ -101,6 +114,19 @@
         
                 $html.animate({ scrollTop: posTop }, 800);
             });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".mNav").click(function(){
+            $(".nav_menu").animate({width:"toggle"}, 400);
+        });
+        
+        $(window).resize(function(){
+            let wWidth = $(window).width();
+            if(wWidth>400){
+                $(".nav_menu").removeAttr("style");
+            }
         });
     </script>
 </body>

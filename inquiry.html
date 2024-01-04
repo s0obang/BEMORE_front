@@ -64,16 +64,20 @@
 </head>
 <body>
     <img src=".\images\back.png" class="background">
-    <nav class="navbar">
+    <div id="navbar">
         <div class="nav_logo"><i><a href="start.html">BEMORE+</a></i></div>
-        <div class="mobile_menu_icon">&#9776;</div>
+        <div class="mNav">
+            <div class="icon_wrap">
+                <div class="icon"></div>
+            </div>
+        </div>
         <ul class="nav_menu">
-            <li><a href='join.html'>지원하기</a></li>
-            <li><a href='inquiry.html'>합격자 조회</a></li>
-            <li><a href='intro.html'>동아리 소개</a></li>
-            <li><a href='practice_intro.html'>동아리 활동</a></li>
+            <li><div><a href='join.html'>지원하기</a></div></li>
+            <li><div><a href='inquiry.html'>합격자 조회</a></div></li>
+            <li><div><a href='intro.html'>동아리 소개</a></div></li>
+            <li><div><a href='practice_intro.html'>동아리 활동</a></div></li>
         </ul>
-    </nav>
+    </div>
     <div class="container">
         <form action="#">
             <div class="formbox">
@@ -88,5 +92,18 @@
             </div>
         </form>
     </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".mNav").click(function(){
+            $(".nav_menu").animate({width:"toggle"}, 400);
+        });
+        
+        $(window).resize(function(){
+            let wWidth = $(window).width();
+            if(wWidth>400){
+                $(".nav_menu").removeAttr("style");
+            }
+        });
+    </script>
 </body>
 </html>
